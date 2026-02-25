@@ -1,0 +1,158 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  background: #0ea5e9;
+  color: white;
+}
+
+header select {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+}
+
+/* Calculator */
+.calculator {
+  margin: 20px;
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #0ea5e9;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background: #0ea5e9;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0284c7;
+}
+
+/* Keyboard */
+.keyboard {
+  margin: 20px;
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #0ea5e9;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Notebook */
+.notebook {
+  margin: 20px;
+  padding: 20px;
+  background: #111827;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #f97316;
+}
+
+textarea {
+  width: 90%;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#savedNotes p {
+  background: #1e293b;
+  padding: 5px;
+  border-radius: 6px;
+  margin: 5px 0;
+}
+
+/* Topics */
+.topics {
+  margin: 20px;
+  padding: 20px;
+  background: #111827;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #84cc16;
+}
+
+.topics ul {
+  list-style: none;
+  padding: 0;
+}
+
+.topics li {
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  background: #0f172a;
+  font-size: 14px;
+}
+
+/* Emojis & decorations */
+header::after {
+  content: "📐🧮✨";
+  display: block;
+  margin-top: 5px;
+  font-size: 24px;
+}
+
+.calculator::before {
+  content: "🧠";
+  display: block;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.keyboard::before {
+  content: "⌨️";
+  display: block;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.notebook::before {
+  content: "📓";
+  display: block;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.topics::before {
+  content: "📚";
+  display: block;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
